@@ -26,7 +26,7 @@ player2_name = Entry(tk, textvariable=p2, bd=5)
 player2_name.grid(row=2, column=1, columnspan=8)
 label = Label(tk, text="Player 2:", font='Times 20 bold', bg='white', fg='black', height=1, width=8)
 label.grid(row=2, column=0)
-# no problem
+
 button1 = Button(tk, text=" ", font='Times 20 bold', bg='gray', fg='white', height=4, width=8,
                  command=lambda: btclick(button1))
 button1.grid(row=3, column=0)
@@ -121,13 +121,6 @@ def checkForWin():
               button7['text'] == 'O' and button6['text'] == 'O' and button9['text'] == 'O'):
             disableButton()
             tkinter.messagebox.showinfo("Tic-Tac-Toe", playerb)
-
-
-
-
-
-
-
 menu=Menu(tk)
 tk.config(menu=menu)
 
